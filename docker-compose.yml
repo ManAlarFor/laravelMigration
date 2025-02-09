@@ -24,6 +24,21 @@ services:
             - sail
         depends_on:
             - mariadb
+        
+    phpmyadmin:
+        image: 'phpmyadmin/phpmyadmin'
+        restart: always
+        ports:
+            - '8081:80'
+        environment:
+            PMA_HOST: mariadb
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+        networks:
+            - sail
+        depends_on:
+            - mariadb
+
+        
     mariadb:
         image: 'mariadb:11'
         ports:

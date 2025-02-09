@@ -1,0 +1,35 @@
+/* Manuel Alarcón Fortes */
+
+h1{
+    font-size: 500% !important;
+}
+
+.bg-titulo{
+
+    background-color: #BA5FD0 !important;
+    font-family: instrumentSerif;
+    color: #FFF !important;
+
+}
+
+.bg-clarito{
+
+    background-color: #F6E8F9 !important;
+
+}
+
+.bg-input{
+
+    background-color: #E4BBEB !important;
+
+}
+
+form{
+    font-family: instrumentSans;
+}
+
+.descrip{
+
+    width: 80% !important;
+
+}
